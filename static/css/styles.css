@@ -1,0 +1,77 @@
+/* Centering the form and input styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 40px; /* Add margin to push results down from the form */
+}
+
+/* Style each result in a rounded div */
+.result {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.result p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Style the similarity score */
+.similarity-score {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007BFF;
+    display: block; /* Ensure it’s on a new line */
+}
